@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- レスポンシブデザイン -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>実践コーディング</title>
+    <link rel="stylesheet" href="style.min.css">
+    <!-- fontawesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+ <!-- swipwe -->
+ <link rel="stylesheet" href="css/swiper.css">
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- googlefont -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+<!-- drawer.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+<!-- jquery & iScroll -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+<!-- drawer.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+</head>
+<body class="drawer drawer--right">
+ 
+<header>
+    <div class="header-container">
+        <div class="inner">
+            <div class="header-menu-nav">
+                <ul>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="service">Service</a></li>
+                    <li><a href="results">Results</a></li>
+                    <li><a href="price">Price</a></li>
+                    <li><a href="comments">Comments</a></li>
+                    <li><a href="faqs">FAQs</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="header-logo">
+               <img src="img/logo.png" alt="">
+            </div>
+            <div class="header-menu drawer-toggle drawer-hamburger">
+                <!-- <img src="svg/hamburger.svg" alt=""> -->
+                <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+            </div>
+        </div>
+    </div>
+    <!-- navigationの中身 -->
+    <nav class="drawer-nav" role="navigation">
+            <ul class="drawer-menu">
+              <li><a class="drawer-menu-item" href="#news">News</a></li>
+              <li><a class="drawer-menu-item" href="#service">Service</a></li>
+              <li><a class="drawer-menu-item" href="#results">Results</a></li>
+              <li><a class="drawer-menu-item" href="#price">Price</a></li>
+              <li><a class="drawer-menu-item" href="#comments">Comments</a></li>
+              <li><a class="drawer-menu-item" href="#faqs">FAQs</a></li>
+              <li><a class="drawer-menu-item" href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+    
+    <div class="header-text">
+        <h1>詩が生れて、画が出来る。<br>とかくに人の世は住みにくい。</h1>
+        <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+       <div class="contact">
+           <a href="">お問い合わせしてみる</a>
+       </div>
+    </div>
+</header>
+
+<div id="news">
+    <div class="inner">
+        <h2 class="news-title">
+            News
+        </h2>
+        <div class="news-container">
+            <!-- news-item -->
+            <div class="news-item">
+                <div class="news-wrapper news1">
+
+                    <div class="news-meta">
+                        <div class="news-time">
+                            2019-02-01
+                        </div>
+                        <div class="news-btn">
+                            <a href="">テキスト</a>
+                        </div>
+                        <div class="news-text">
+                                ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース
+                        </div>
+                    </div>
+                    <div class="arrow">
+                        <img src="svg/news-arrow.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- news-item -->
+            <div class="news-item">
+                <div class="news-wrapper">
+                    <div class="news-meta">
+                        <div class="news-time">
+                            2019-02-01
+                        </div>
+                        <div class="news-btn">
+                            <a href="">テキスト</a>
+                        </div>
+                        <div class="news-text">
+                                ニュースニュースニュースニュースニュースニュースニュース
+                        </div>
+                    </div>
+                    <div class="arrow">
+                        <img src="svg/news-arrow.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- news-item -->
+            <div class="news-item">
+                <div class="news-wrapper">
+                    <div class="news-meta">
+                        <div class="news-time">
+                            2019-02-01
+                        </div>
+                        <div class="news-btn">
+                            <a href="">テキスト</a>
+                        </div>
+                        <div class="news-text">
+                                ニュースニュースニュースニュースニュースニュースニュース
+                        </div>
+                    </div>
+                    <div class="arrow">
+                        <img src="svg/news-arrow.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news-more">
+            <a href="">MORE</a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div id="service">
+        <h2 class="service-title">
+            Service
+        </h2>
+                  <div class="inner">
+          <div class="service-wrapper">
+              <div class="service-container">
+                  <!-- item -->
+                  <div class="service-item">
+                      <div class="service-icon">
+                          <img src="svg/service1.svg" alt="">
+                      </div>
+                      <h3>WEB<br>DESIGN</h3>
+                      <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+                  </div>
+                  <!-- item -->
+                  <div class="service-item">
+                        <div class="service-icon">
+                                <img src="svg/service2.svg" alt="">
+                            </div>
+                      <h3>WEB<br>CODING</h3>
+                      <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+                  </div>
+                  <!-- item -->
+                  <div class="service-item">
+                        <div class="service-icon">
+                                <img src="svg/service3.svg" alt="">
+                            </div>
+                      <h3>CMS<br>CUSTOMIZE</h3>
+                      <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+                  </div>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+<div id="results">
+  <h2 class="results-title">
+      Results
+  </h2>
+  <div class="swiper-container">
+      <div class="swiper-wrapper">
+          <!-- item   -->
+          <div class="swiper-slide">
+             <img src="img/slide1.png" alt="">
+             <div class="results-contents">
+                 <div class="results-text">
+                     <h4>とかくに人の世は住みにくい。</h4>
+                     <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+                 </div>
+             </div>   
+          </div>
+          <!-- item   -->
+          <div class="swiper-slide">
+             <img src="img/slide1.png" alt="">
+             <div class="results-contents">
+                 <div class="results-text">
+                     <h4>とかくに人の世は住みにくい。</h4>
+                     <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+                 </div>
+             </div>   
+          </div>
+          <!-- item   -->
+          <div class="swiper-slide">
+             <img src="img/slide1.png" alt="">
+             <div class="results-contents">
+                 <div class="results-text">
+                     <h4>とかくに人の世は住みにくい。</h4>
+                     <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+                 </div>
+             </div>   
+          </div>
+          <!-- item   -->
+          <div class="swiper-slide">
+             <img src="img/slide1.png" alt="">
+             <div class="results-contents">
+                 <div class="results-text">
+                     <h4>とかくに人の世は住みにくい。</h4>
+                     <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+                 </div>
+             </div>   
+          </div>
+          <!-- item   -->
+          <div class="swiper-slide">
+             <img src="img/slide1.png" alt="">
+             <div class="results-contents">
+                 <div class="results-text">
+                     <h4>とかくに人の世は住みにくい。</h4>
+                     <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+                 </div>
+             </div>   
+          </div>
+          <!-- item   -->
+          <div class="swiper-slide">
+             <img src="img/slide1.png" alt="">
+             <div class="results-contents">
+                 <div class="results-text">
+                     <h4>とかくに人の世は住みにくい。</h4>
+                     <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+                 </div>
+             </div>   
+          </div>
+
+      </div>
+      <div class="inner">
+          <div class="swiper-pagination"></div>
+      </div>
+  </div>
+  <div class="inner">
+      <div class="view">
+          <a href="">VIEW ALL</a>
+      </div>
+  </div>
+</div>
+<div id="price">
+    <div class="inner">
+        <h2 class="price-title">
+            Price
+        </h2>
+         <table class="price-table">
+　　　　　　　<tr>
+                <th>row１</th>
+                <td>Price ￥10,000</td>
+             </tr>
+　　　　　　　<tr>
+                <th class="row2">row２</th>
+                <td>Price ￥10,000</td>
+             </tr>
+　　　　　　　<tr>
+                <th>row３</th>
+                <td>Price ￥10,000</td>
+             </tr>
+         </table>
+         <p>※ 上記料金はサンプルです。</p>
+    </div>
+</div>
+<div class="comments-inner">
+
+
+<div id="comments">
+    <div class="inner">
+        <h2 class="comments-title">
+            Comments
+        </h2>
+        <div class="comments-container">
+            <!-- item -->
+            <div class="comments-item">
+                <div class="people">
+                    <img src="img/comments1.png" alt="">
+                </div>
+                <div class="comments-text">
+                        どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+                </div>  
+            </div>
+            <!-- item -->
+            <div class="comments-item">
+                <div class="people">
+                    <img src="img/comments2.png" alt="">
+                </div>
+                <div class="comments-text">
+                        どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+<div class="comments-img">
+    <img src="img/comments3.png" alt="">
+</div>
+</div>
+<div class="black-back"></div>
+
+<div id="faqs">
+   <div class="inner">
+       <h2 class="faqs-title">
+           Q&A
+       </h2>
+           <!-- item -->
+           <div class="faqs-item">
+               <div class="faqs-content">
+                   <div class="q">
+                       <p>Q</p>
+                   </div>
+                   <div class="question">
+                       <p>質問質問質問？</p>
+                   </div>
+                   <div class="svg">
+                       <img src="svg/plus.svg" alt="">
+                   </div>
+               </div>
+               <div class="answer">
+                   <p>
+                       回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答
+                   </p>
+               </div>
+           </div>
+           <!-- item -->
+           <div class="faqs-item">
+               <div class="faqs-content">
+                   <div class="q">
+                       <p>Q</p>
+                   </div>
+                   <div class="question">
+                       <p>質問質問質問？</p>
+                   </div>
+                   <div class="svg">
+                       <img src="svg/plus.svg" alt="">
+                   </div>
+               </div>
+               <div class="answer">
+                   <p>
+                       回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答
+                   </p>
+               </div>
+           </div>
+           <!-- item -->
+           <div class="faqs-item">
+               <div class="faqs-content">
+                   <div class="q">
+                       <p>Q</p>
+                   </div>
+                   <div class="question">
+                       <p>質問質問質問？</p>
+                   </div>
+                   <div class="svg">
+                       <img src="svg/plus.svg" alt="">
+                   </div>
+               </div>
+               <div class="answer">
+                   <p>
+                       回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答
+                   </p>
+               </div>
+           </div>
+           <!-- item -->
+           <div class="faqs-item">
+               <div class="faqs-content">
+                   <div class="q">
+                       <p>Q</p>
+                   </div>
+                   <div class="question">
+                       <p>質問質問質問？</p>
+                   </div>
+                   <div class="svg">
+                       <img src="svg/plus.svg" alt="">
+                   </div>
+               </div>
+               <div class="answer">
+                   <p>
+                       回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答
+                   </p>
+               </div>
+           </div>
+           <!-- item -->
+           <div class="faqs-item">
+               <div class="faqs-content">
+                   <div class="q">
+                       <p>Q</p>
+                   </div>
+                   <div class="question">
+                       <p>質問質問質問？</p>
+                   </div>
+                   <div class="svg">
+                       <img src="svg/plus.svg" alt="">
+                   </div>
+               </div>
+               <div class="answer">
+                   <p>
+                       回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答
+                   </p>
+               </div>
+           </div>
+           <!-- item -->
+           <div class="faqs-item">
+               <div class="faqs-content">
+                   <div class="q">
+                       <p>Q</p>
+                   </div>
+                   <div class="question">
+                       <p>質問質問質問？</p>
+                   </div>
+                   <div class="svg">
+                       <img src="svg/plus.svg" alt="">
+                   </div>
+               </div>
+               <div class="answer">
+                   <p>
+                       回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答
+                   </p>
+               </div>
+           </div>
+   </div>
+</div>
+<div class="access-back"></div>
+<div id="access">
+<div class="inner">
+    <div class="access-block">
+        <h2 class="access-title">
+            Access
+        </h2>
+        <div class="access-container">
+            <p>
+                〒106-6126<br>
+                東京都港区六本木 6丁目 10-1<br>
+                 六本木ヒルズ森タワー
+            </p>
+        </div>
+        <div class="access-map">
+            <img src="img/images.jpg" alt="">
+        </div>
+        <div class="google-map">
+            <a href="">Google Maps</a>
+        </div>
+    </div>
+    <div class="access-block2">
+        <div class="access-map-top">
+            <img src="img/images.jpg" alt="">    
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="contact">
+    <div class="inner">
+        <div class="contact-title-wrapper">
+            <h2 class="contact-title">
+                Contact Us
+            </h2>
+            <p>
+                    どこへ越しても住みにくいと悟った時、詩が生れ て、画が出来る。
+            </p>
+        </div>
+        <!-- form -->
+        <form action="">
+            <div class="form-container">
+               <dl>
+                   <dt>お問い合わせ種別</dt>
+                   <dd>
+                       <select name="" id="">
+                           <option value="">選択してください</option>
+                           <option value="">選択１</option>
+                           <option value="">選択２</option>
+                           <option value="">選択３</option>
+                       </select>
+                   </dd>
+               </dl>
+               <dl>
+                   <dt>氏名<span>必須</span></dt>
+                   <dd><input type="text" placeholder="氏名"></dd>
+               </dl>
+               <dl>
+                   <dt>フリガナ<span>必須</span></dt>
+                   <dd><input type="text" placeholder="フリガナ"></dd>
+               </dl>
+               <dl>
+                   <dt>メールアドレス</dt>
+                   <dd><input type="text" placeholder="sample@gmail.com"></dd>
+               </dl>
+               <dl>
+                   <dt class="gender1">性別</dt>
+                   <dd>
+                       <div class="gender">
+                           <div class="man">
+                               <input type="radio" id="form01" name="radio1">
+                                   <label for="form01">男性</label>
+                           </div>
+                           <div class="weman">
+                               <input type="radio" id="form02" name="radio1">
+                           <label for="form02">女性</label>
+                           </div>
+                       </div>
+                   </dd>
+               </dl>
+               <div class="mess">
+                   <p>メッセージ</p>
+                   <textarea name="" id="" cols="30" rows="10"></textarea>
+               </div>
+               <div class="info">
+                   <input type="checkbox" id="info1">
+                   <label for="info1">個人情報保護方針</label>
+               </div>
+            </div>
+            <div class="submit-inner">
+                <div class="submit">
+                    <a href="">送信する</a>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <div class="inner">
+
+    <div class="footer-left">
+
+        <div class="icon">
+              <i class="fab fa-twitter fa-3x "></i>
+              <i class="fab fa-facebook-square fa-3x "></i>
+        </div>
+        <ul class="infomation">
+           <li>サイトマップ</li>
+           <li>個人情報保護方針</li>
+           <li>プライバシーポリシー</li>
+        </ul>
+    </div>
+    <div class="footer-right">
+        <div class="haniwaman-logo">
+            <h2>HANIWAMAN Corp.</h2>
+            <p>© Haniwaman Landing page Sample.</p>
+            <div class="totop">
+                <img src="svg/totop .svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+
+<!-- radioボタン -->
+<script>
+    $(function(){
+        var nowchecked = $('input[name=radio1]:checked').val();
+        $('input[name=radio1]').click(function(){
+            if($(this).val() == nowchecked) {
+                $(this).prop('checked', false);
+                nowchecked = false;
+            } else {
+                nowchecked = $(this).val();
+            }
+        });
+    });
+    </script>
+  <!-- ドロワーメニューの利用宣言 -->
+  <script>
+        $(document).ready(function() {
+        $('.drawer').drawer();
+      });
+      </script>
+<!-- topに戻る -->
+<script>
+    $(".totop").click(function() {
+      $('body, html').animate({scrollTop: 0}, 300, 'linear');
+    });
+</script>
+
+<!-- swiper -->
+<script src="js/swiper.js"></script>
+<!-- <script>
+var swiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+    // スライドを何枚表示させるか
+   slidesPerView: 1.5,
+//   スライド間の距離
+  spaceBetween: 25,
+//   最初の表示を何枚目にするか
+  initialSlide: 1,
+  loop: true,    
+});
+</script> -->
+
+<script>
+var windowWidth = $(window).width();
+var windowSm = 375;
+if (windowWidth <= windowSm) {
+    //横幅640px以下のとき（つまりスマホ時）に行う処理を書く
+    var swiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+    // スライドを何枚表示させるか
+   slidesPerView: 1,
+//   スライド間の距離
+  spaceBetween: 25,
+//   最初の表示を何枚目にするか
+  initialSlide: 1,
+  loop: true,    
+});
+} else {
+    //横幅640px超のとき（タブレット、PC）に行う処理を書く
+    var swiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+    // スライドを何枚表示させるか
+   slidesPerView: 4,
+//   スライド間の距離
+  spaceBetween: 50,
+//   最初の表示を何枚目にするか
+  initialSlide: 1,
+  loop: true,    
+});
+}
+</script>
+
+<!-- アコーディオン -->
+<script>
+$('.faqs-item').click(function(){
+    var $answer =$(this).find('.answer');
+    if($answer.hasClass('open')){
+        $answer.removeClass('open');
+        $answer.slideUp();
+        $(this).find('img').attr('src','svg/plus.svg');
+    }else{
+        $answer.addClass('open');
+        $answer.slideDown();
+        $(this).find('img').attr('src','svg/minus.svg');
+    }
+})
+ </script>
+</body>
+</html>
